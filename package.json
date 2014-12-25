@@ -1,0 +1,41 @@
+{
+  "name": "gulp-src-ordered-globs",
+  "version": "1.0.0",
+  "description": "gulp.src() wrapper which respects the globs array order - https://github.com/gulpjs/gulp/issues/837",
+  "main": "index.js",
+  "keywords": [
+    "gulpfriendly",
+    "vinyl"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UltCombo/gulp-src-ordered-globs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UltCombo/gulp-src-ordered-globs/issues"
+  },
+  "homepage": "https://github.com/UltCombo/gulp-src-ordered-globs",
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "scripts": {
+    "test": "jshint . && jscs . -c .jscsrc && npm i gulp && mocha"
+  },
+  "author": {
+    "name": "Ult Combo",
+    "email": "ultcombo@gmail.com"
+  },
+  "license": "WTHPL v1.0.0",
+  "dependencies": {
+    "glob-manipulate": "^1.0.0",
+    "gulp-filter": "^2.0.0",
+    "merge-stream": "^0.1.6",
+    "unique-stream": "^1.0.0"
+  },
+  "devDependencies": {
+    "jscs": "^1.9.0",
+    "jshint": "^2.5.11",
+    "mocha": "^2.1.0",
+    "stream-assert": "^2.0.2"
+  }
+}
