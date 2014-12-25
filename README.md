@@ -16,8 +16,8 @@ npm install --save-dev gulp-src-ordered-globs
 
 ```js
 var gulpSrc = require('gulp-src-ordered-globs');
-gulpSrc(['src/**'], { base: 'src' })
-	.pipe(/*...*/);
+gulpSrc(['src/**', '!src/**/*.js', 'src/vendor/**/*.js'], { base: 'src' })
+	.pipe(gulp.dest('dist'));
 ```
 
 gulp-src-ordered-globs's signature is pretty much identical to [`gulp.src`'s](https://github.com/gulpjs/gulp/blob/master/docs/API.md#gulpsrcglobs-options). Just note that the first argument ***must*** be an array of globs (otherwise you'd get no advantage from using gulp-src-ordered-globs anyway), and the `options` argument must contain the `base` property.
