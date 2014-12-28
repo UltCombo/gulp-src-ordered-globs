@@ -9,6 +9,8 @@
     "disallowKeywords": ["with"],
     "disallowSpacesInsideObjectBrackets": null,
     "disallowImplicitTypeConversion": ["string"],
+    "requireMultipleVarDecl": null,
+    "disallowMultipleVarDecl": true,
 
     "excludeFiles": ["node_modules/"]
 }
