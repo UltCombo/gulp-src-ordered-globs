@@ -26,5 +26,6 @@ gulp-src-ordered-globs's signature is pretty much identical to [`gulp.src`'s](ht
 
 # Changelog
 
+- **1.0.2**: Huge refactoring; no longer require `base` option; fix unit tests; change code style; Readme: add note about gulp 4.
 - **1.0.1**: update readme example; some little refactoring.
 - **1.0.0**: initial release.
