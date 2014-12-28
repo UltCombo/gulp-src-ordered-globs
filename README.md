@@ -1,4 +1,4 @@
-**NOTE:** this package is to be used with gulp 3.x only, gulp 4's `gulp.src()` will already have this functionality built-in.
+**NOTE:** this package should be used with gulp 3.x only, gulp 4's `gulp.src()` will already have this functionality built-in.
 
 # gulp-src-ordered-globs
 [![npm version](http://img.shields.io/npm/v/gulp-src-ordered-globs.svg)](https://npmjs.org/package/gulp-src-ordered-globs)
