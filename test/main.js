@@ -31,8 +31,7 @@ it('should filter out dupes', function(done) {
 		.pipe(assert.end(done));
 });
 
-it('should pass the `options` argument to `gulp.src()` ' +
-	'with multiple positive globs', function(done) {
+it('should pass the `options` argument to `gulp.src()`', function(done) {
 	var base = '.';
 	gulpSrc([fixDir + 'a.txt', fixDir + 'b'], { base: base })
 		.pipe(assert.length(2))
@@ -42,8 +41,7 @@ it('should pass the `options` argument to `gulp.src()` ' +
 		.pipe(assert.end(done));
 });
 
-it('should respect the globs order and pass the `options` argument to `gulp.src()` ' +
-	'with a single positive glob', function(done) {
+it('should respect the globs order with a single positive glob', function(done) {
 	var base = '.';
 	gulpSrc(['!' + fixDir + 'b', fixDir + 'b'], { base: base })
 		.pipe(assert.length(1))

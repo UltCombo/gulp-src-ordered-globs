@@ -20,17 +20,14 @@ module.exports = function(globs, options) {
 	});
 
 	if (!positives.length) throw new Error('Missing positive glob');
-	if (positives.length === 1) {
-		var negativeGlobs = negatives.filter(indexGreaterThan(positives[0].index)).map(toGlob);
-		return src([positives[0].glob].concat(negativeGlobs), options);
-	}
+	if (positives.length === 1) return createStream(positives[0]);
 
-	return merge.apply(undefined,
-		positives.map(function(positive) {
-			var negativeGlobs = negatives.filter(indexGreaterThan(positive.index)).map(toGlob);
-			return src([positive.glob].concat(negativeGlobs), options);
-		})
-	).pipe(unique('path'));
+	return merge.apply(undefined, positives.map(createStream)).pipe(unique('path'));
+
+	function createStream(positive) {
+		var negativeGlobs = negatives.filter(indexGreaterThan(positive.index)).map(toGlob);
+		return src([positive.glob].concat(negativeGlobs), options);
+	}
 };
 
 function indexGreaterThan(index) {
