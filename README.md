@@ -1,10 +1,12 @@
+**NOTE:** this package is to be used with gulp 3.x only, gulp 4's `gulp.src()` will already have this functionality built-in.
+
 # gulp-src-ordered-globs
 [![npm version](http://img.shields.io/npm/v/gulp-src-ordered-globs.svg)](https://npmjs.org/package/gulp-src-ordered-globs)
 [![Build Status](http://img.shields.io/travis/UltCombo/gulp-src-ordered-globs.svg)](https://travis-ci.org/UltCombo/gulp-src-ordered-globs)
 [![Dependency Status](http://img.shields.io/david/UltCombo/gulp-src-ordered-globs.svg)](https://david-dm.org/UltCombo/gulp-src-ordered-globs)
 [![devDependency Status](http://img.shields.io/david/dev/UltCombo/gulp-src-ordered-globs.svg)](https://david-dm.org/UltCombo/gulp-src-ordered-globs#info=devDependencies)
 
-`gulp.src()` wrapper which respects globs array order - https://github.com/gulpjs/gulp/issues/837
+`gulp.src()` wrapper which respects the globs array order (for gulp 3.x) - https://github.com/gulpjs/gulp/issues/837
 
 # Install
 
