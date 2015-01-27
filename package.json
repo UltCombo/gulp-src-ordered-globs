@@ -28,14 +28,14 @@
   "license": "WTHPL v1.0.0",
   "dependencies": {
     "glob-manipulate": "^1.1.1",
-    "merge-stream": "^0.1.6",
-    "unique-stream": "^1.0.0"
+    "merge-stream": "^0.1.7",
+    "unique-stream": "^2.0.2"
   },
   "devDependencies": {
-    "jscs": "^1.9.0",
-    "jshint": "^2.5.11",
+    "jscs": "^1.10.0",
+    "jshint": "^2.6.0",
     "mocha": "^2.1.0",
-    "should": "^4.4.2",
+    "should": "^4.6.1",
     "stream-assert": "^2.0.2"
   }
 }
