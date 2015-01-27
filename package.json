@@ -1,6 +1,6 @@
 {
   "name": "gulp-src-ordered-globs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "gulp.src() wrapper which respects the globs array order (for gulp 3.x) - https://github.com/gulpjs/gulp/issues/837",
   "main": "index.js",
   "keywords": [
